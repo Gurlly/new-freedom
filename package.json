@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@popperjs/core": "^2.11.8",
     "@preline/accordion": "^2.3.0",
     "@preline/overlay": "^2.4.0",
+    "@preline/tooltip": "^2.4.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

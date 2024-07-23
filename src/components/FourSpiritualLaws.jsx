@@ -1,11 +1,34 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 
 import { LiaTimesSolid } from "react-icons/lia";
+
+// Pages
+import FirstPage from './FourSLPages/FirstPage';
+import SecondPage from './FourSLPages/SecondPage';
+import ThirdPage from './FourSLPages/ThirdPage';
+import FourthPage from './FourSLPages/FourthPage';
+import FifthPage from './FourSLPages/FifthPage';
+import SixthPage from './FourSLPages/SixthPage';
+import SeventhPage from './FourSLPages/SeventhPage';
+
+const pages = [
+    <FirstPage/>,
+    <SecondPage/>,
+    <ThirdPage/>,
+    <FourthPage/>,
+    <FifthPage/>,
+    <SixthPage/>,
+    <SeventhPage/>,
+];
 
 const FourSpiritualLaws = () => {
 
     const [pageNum, setPageNum] = useState(1);
-    const [currentPage, setCurrentPage] = useState();
+    const [currentPage, setCurrentPage] = useState(pages[0]);
+
+    useEffect(() => {
+        setCurrentPage(pages[pageNum - 1]);
+    }, [pageNum])
 
   return (
     <>
@@ -22,15 +45,21 @@ const FourSpiritualLaws = () => {
                         </button>
                     </div>
                     <div className="p-4 overflow-y-auto">
-                        <p className="mt-1 text-gray-800">
-                        This is a wider card with supporting text below as a natural lead-in to additional content.
-                        </p>
+                        {currentPage}
                     </div>
-                    <div className="flex justify-between items-center py-3 px-4 border-t border-t-freedom-gray">
-                        <button type="button" className="w-32 py-2 px-3 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+                    <div className={`flex ${pageNum === 1 ? "justify-end" : pageNum === pages.length ? "justify-start" : "justify-between"} items-center py-3 px-4 border-t border-t-freedom-gray`}>
+                        <button 
+                        type="button" 
+                        className={`w-32 py-2 px-3 ${pageNum === 1 ? "hidden" : "inline-flex"} items-center justify-center gap-x-2 text-sm font-medium rounded-lg bg-freedom-violet text-freedom-white`}
+                        onClick={() => setPageNum(pageNum - 1)}
+                        >
                             <span>&larr;</span> Previous
                         </button>
-                        <button type="button" className="w-32 py-2 px-3 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+                        <button 
+                        type="button" 
+                        className={`w-32 py-2 px-3 ${pageNum === pages.length ? "hidden" : "inline-flex"} items-center justify-center gap-x-2 text-sm font-medium rounded-lg bg-freedom-violet text-freedom-white`}
+                        onClick={() => setPageNum(pageNum + 1)}
+                        >
                             Next <span>&rarr;</span>
                         </button>
                     </div>
