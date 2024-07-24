@@ -4,7 +4,7 @@ const AboutAccordion = () => {
   return (
     <>
         <div className="hs-accordion -mt-px" id="missionVision">
-            <button className="hs-accordion-toggle lg:text-2xl xl:text-3xl hs-accordion-active:text-freedom-light-blue inline-flex items-center justify-center gap-x-3 w-full font-bold text-xl text-neutral-900 px-5 pb-5 lg:pb-6 lg:pt-1 xl:pb-7 xl:pt-2 hover:text-freedom-light-blue transition-colors ease-linear duration-300" aria-controls="mission-vision">
+            <button className="hs-accordion-toggle lg:text-2xl hs-accordion-active:text-freedom-light-blue inline-flex items-center justify-center gap-x-3 w-full font-bold text-xl text-neutral-900 px-5 pb-5 lg:pb-6 lg:pt-1 xl:pb-7 xl:pt-2 hover:text-freedom-light-blue transition-colors ease-linear duration-300" aria-controls="mission-vision">
                 Mission & Vision
             </button>
             <div id="mission-vision" className="hs-accordion-content w-full overflow-hidden hidden transition-[height] duration-300" aria-labelledby="missionVision">
@@ -20,7 +20,7 @@ const AboutAccordion = () => {
         <hr className="border-freedom-gray mb-5" />
         
         <div className="hs-accordion -mt-px" id="coreValues">
-            <button className="hs-accordion-toggle lg:text-2xl xl:text-3xl hs-accordion-active:text-freedom-light-blue inline-flex items-center justify-center gap-x-3 w-full font-bold text-xl text-neutral-900 px-5 pb-5 lg:pb-6 lg:pt-1 xl:pb-7 xl:pt-2 hover:text-freedom-light-blue transition-colors ease-linear duration-300" aria-controls="core-values">
+            <button className="hs-accordion-toggle lg:text-2xl hs-accordion-active:text-freedom-light-blue inline-flex items-center justify-center gap-x-3 w-full font-bold text-xl text-neutral-900 px-5 pb-5 lg:pb-6 lg:pt-1 xl:pb-7 xl:pt-2 hover:text-freedom-light-blue transition-colors ease-linear duration-300" aria-controls="core-values">
                 Core Values
             </button>
             <div id="core-values" className="hs-accordion-content w-full overflow-hidden hidden transition-[height] duration-300" aria-labelledby="coreValues">
@@ -83,7 +83,7 @@ const AboutAccordion = () => {
         <hr className="border-freedom-gray mb-5" />
 
         <div className="hs-accordion -mt-px" id="statementOfFaith">
-            <button className="hs-accordion-toggle lg:text-2xl xl:text-3xl hs-accordion-active:text-freedom-light-blue inline-flex items-center justify-center gap-x-3 w-full font-bold text-xl text-neutral-900 px-5 pb-5 xl:pb-7 xl:pt-2 hover:text-freedom-light-blue transition-colors ease-linear duration-300" aria-controls="statement-of-faith">
+            <button className="hs-accordion-toggle lg:text-2xl hs-accordion-active:text-freedom-light-blue inline-flex items-center justify-center gap-x-3 w-full font-bold text-xl text-neutral-900 px-5 pb-5 xl:pb-7 xl:pt-2 hover:text-freedom-light-blue transition-colors ease-linear duration-300" aria-controls="statement-of-faith">
                 Statement of Faith
             </button>
             <div id="statement-of-faith" className="hs-accordion-content w-full overflow-hidden hidden transition-[height] duration-300" aria-labelledby="statementOfFaith">

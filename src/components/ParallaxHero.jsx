@@ -15,7 +15,7 @@ const ParallaxHero = ({changeActiveLink}) => {
             className='w-full h-full absolute top-0 left-0 z-0'
         >
             <div className='w-full h-dvh flex flex-col items-center justify-center'>
-                <h2 className='text-shadow text-[3.45rem] md:text-7xl lg:text-[5.5rem] xl:text-8xl font-extrabold text-center text-freedom-white tracking-tight leading-tight md:leading-snug'>Welcome to Freedom!</h2>
+                <h2 className='text-shadow px-3 text-[3.45rem] md:text-7xl lg:text-[5.5rem] xl:text-8xl font-extrabold text-center text-freedom-white tracking-tight leading-tight md:leading-snug'>Welcome to Freedom!</h2>
                 <div className='flex flex-col mt-8 lg:mt-20 lg:flex-row items-center justify-center gap-y-8 gap-x-48'>
                     <a 
                     href="#about" 

@@ -1,5 +1,7 @@
 
 import { LiaTimesSolid } from "react-icons/lia";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 import Scrollspy from "react-scrollspy";
 
 const NavOffCanvas = ({links, changeActiveLink}) => {
@@ -26,16 +28,56 @@ const NavOffCanvas = ({links, changeActiveLink}) => {
                     >
                     {
                         links.map((link, index) => (
-                            <li className="w-full border-y border-neutral-300" key={index}>
-                                <a 
-                                className={`w-full inline-flex items-center gap-x-3.5 p-4 hover:text-freedom-violet hover:bg-freedom-yellow ${link.active ? "font-bold text-freedom-violet bg-freedom-yellow" : "text-neutral-900 font-medium"} -mt-px transition-colors ease-in-out delay-75 duration-300`}
-                                href={`#${link.id}`}
-                                onClick={() => changeActiveLink(link.id)}
-                                >
-                                    {link.icon}
-                                    <p className="text-sm">{link.name}</p>
-                                </a>
-                            </li>
+                            link.id !== "form"
+                            ? 
+                            (
+                                <li className="w-full border-y border-neutral-300" key={index}>
+                                    <a 
+                                    className={`w-full inline-flex items-center gap-x-3.5 p-4 hover:text-freedom-violet hover:bg-freedom-yellow ${link.active ? "font-bold text-freedom-violet bg-freedom-yellow" : "text-neutral-900 font-medium"} -mt-px transition-colors ease-in-out delay-75 duration-300`}
+                                    href={`#${link.id}`}
+                                    onClick={() => changeActiveLink(link.id)}
+                                    >
+                                        {link.icon}
+                                        <p className="text-sm">{link.name}</p>
+                                    </a>
+                                 </li>
+                            )
+                            :
+                            (
+                                <li className="w-full border-y border-neutral-300 hs-accordion-group" key={index} data-hs-accordion-always-open="false">
+                                    <div className="hs-accordion" id="hs-forms">
+                                        <button
+                                        aria-expanded="false"
+                                        aria-controls="form-group"
+                                        type="button"
+                                        className="hs-accordion-toggle hs-accordion-active:text-freedom-violet hs-accordion-active:bg-freedom-yellow hs-accordion-active:font-bold w-full inline-flex items-center justify-between p-4 hover:text-freedom-violet hover:bg-freedom-yellow -mt-px transition-colors ease-in-out delay-75 duration-300"
+                                        >
+                                            <div className="inline-flex items-center gap-x-3.5">
+                                                {link.icon}
+                                                <p className="text-sm">{link.name}</p>
+                                            </div>
+                                            <MdKeyboardArrowDown/>
+                                        </button>
+                                        <div id="form-group" className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-forms">
+                                            <ul>
+                                                {
+                                                    link.items.map((form, index) => (
+                                                        <li className="w-full border-t border-neutral-300" key={index}>
+                                                            <a 
+                                                            className="w-full text-sm text-freedom-blue inline-flex items-center p-4"
+                                                            href={form.link}
+                                                            target="_blank"
+                                                            rel="noreferrer">
+                                                                {form.name}
+                                                            </a>
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            )
                         ))
                     }
                     </Scrollspy>
