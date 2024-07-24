@@ -20,6 +20,7 @@ import ParallaxHero from './components/ParallaxHero';
 import Scrollspy from 'react-scrollspy';
 import AboutAccordion from './components/AboutAccordion';
 import FourSpiritualLaws from './components/FourSpiritualLaws';
+import AnnouncementCarousel from './components/AnnouncementCarousel';
 
 function App() {
 
@@ -128,6 +129,27 @@ function App() {
             <div className="hs-accordion-group">
               <AboutAccordion/>
             </div>
+          </div>
+        </section>
+
+        <section id="event" className='w-full'>
+          <blockquote className='w-full px-5 md:px-7 lg:px-10 py-14 lg:text-lg bg-freedom-yellow'>
+            <p className="text-freedom-violet text-center">
+              <em>
+                "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, 
+                20 and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age."
+              </em>
+            </p>
+
+            <footer className="mt-6 text-center">
+              <div className="text-base font-semibold text-gray-800">Matthew 28:19-20</div>
+            </footer>
+          </blockquote>
+          <div className='md:container md:mx-auto'>
+            <div className='py-20 md:py-24 lg:py-36 xl:py-40'>
+              <AnnouncementCarousel/>
+            </div>
+            
           </div>
         </section>
       </main>

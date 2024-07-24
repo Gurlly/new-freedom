@@ -7,3 +7,9 @@
 .text-shadow {
     text-shadow: 2px 4px 5px rgba(0,0,0,0.5);
 }
+
+.announcement {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
