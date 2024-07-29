@@ -178,10 +178,18 @@ function App() {
               Join us as we worship, grow, and serve together, building strong connections and supporting one another in our spiritual journeys. 
               Whether you are new to faith or looking to deepen your relationship with God, you are welcome here.
             </p>
-            <div className="hs-accordion-group w-full lg:w-10/12 mx-auto">
+            <div className="hs-accordion-group w-full lg:w-10/12 mx-auto mb-5 md:mb-14 lg:mb-20 xl:mb-24">
               <hr className="border-freedom-gray my-5 md:mt-14 lg:mt-20 xl:mt-24" />
               <AboutAccordion/>
             </div>
+            <p className='text-justify text-[calc(0.75rem+1dvw)]'>
+              At Freedom Christian Fellowship, we are a vibrant community dedicated to living out the teachings of Jesus Christ. 
+              Our goal is to create a welcoming environment where everyone can experience God's love and grace. 
+              We believe in the power of faith, fellowship, and service to transform lives and make a positive impact in our community and beyond.
+              <br/> <br/>
+              Join us as we worship, grow, and serve together, building strong connections and supporting one another in our spiritual journeys. 
+              Whether you are new to faith or looking to deepen your relationship with God, you are welcome here.
+            </p>
           </div>
         </section>
 
