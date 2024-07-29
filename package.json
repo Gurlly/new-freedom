@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@formspree/react": "^2.5.1",
     "@popperjs/core": "^2.11.8",
     "@preline/accordion": "^2.4.0",
     "@preline/carousel": "^2.4.0",

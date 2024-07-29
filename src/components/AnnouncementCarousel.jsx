@@ -44,7 +44,7 @@ const AnnouncementCarousel = () => {
         }'
         className="relative"
       >
-        <div className="hs-carousel relative overflow-hidden w-full min-h-[29rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] bg-white shadow-md shadow-neutral-600">
+        <div className="hs-carousel relative overflow-hidden w-full min-h-dvh bg-white shadow-md shadow-neutral-600">
           <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
             
             {
@@ -52,10 +52,10 @@ const AnnouncementCarousel = () => {
                 <div className="hs-carousel-slide" key={index}>
                   <div className="w-full h-full announcement" style={{ backgroundImage: `url(${announcement.src})`}}>
                     <div className="w-full h-full p-2.5 backdrop-blur-[2px] flex flex-col items-center justify-center gap-y-3 lg:gap-y-5 tracking-tighter select-none">
-                        <h1 className="text-5xl text-center font-extrabold text-freedom-white text-shadow md:text-7xl lg:text-8xl">{announcement.name}</h1>
-                        <p className="text-lg text-freedom-yellow font-semibold text-shadow lg:text-xl">{announcement.day} - <time dateTime={announcement.dateTime}>{announcement.time}</time></p>
+                        <h1 className="text-[calc(3.5rem+2dvw)] text-center font-extrabold text-freedom-white text-shadow">{announcement.name}</h1>
+                        <p className="text-[calc(0.65rem+2dvw)] text-freedom-yellow font-semibold text-shadow">{announcement.day} - <time dateTime={announcement.dateTime}>{announcement.time}</time></p>
                     </div>
-                  </div>
+                  </div>  
                 </div>
               ))
             }

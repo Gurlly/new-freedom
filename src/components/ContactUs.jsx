@@ -1,4 +1,6 @@
 import { React, useState }from 'react'
+import { useForm, ValidationError } from '@formspree/react';
+
 import { FaLocationDot } from "react-icons/fa6";
 
 const outreaches = [
@@ -26,6 +28,8 @@ const ContactUs = () => {
     const changeLocation = (id) => {
         setOutreach(outreaches.find(outreach => outreach.id === id));
     }
+
+    const [state, handleSubmit] = useForm("mnnanzbd");
 
   return (
     <>
@@ -77,34 +81,45 @@ const ContactUs = () => {
                     <form 
                     className='h-full flex flex-col flex-1 justify-between p-5 bg-freedom-white gap-y-2 rounded-b-lg'
                     action="/"
-                    method="POST"
+                    onSubmit={handleSubmit}
                     >
                         <div className='w-full'>
                             <section className="w-full space-y-3">
                                 <input 
-                                type="text" 
+                                type="email" 
                                 className="py-3 px-4 mb-2 block w-full border border-neutral-500 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500" 
                                 placeholder="Email"
                                 required
+                                id="client-email"
                                 name="client-email"
+                                />
+                                <ValidationError 
+                                    prefix="Email" 
+                                    field="client-email"
+                                    errors={state.errors}
                                 />
                             </section>
                             <section className="w-full">
                                 <label htmlFor="message" className="block text-sm font-medium mb-2 dark:text-white">Message:</label>
-                                <textarea 
-                                id="message" 
+                                <textarea
                                 className="py-3 px-4 block w-full h-32 lg:h-36 xl:h-44 border border-neutral-500 resize-none rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500" 
                                 placeholder="Write a message..."
-                                name="message"
+                                id="client-message"
+                                name="client-message"
                                 required
-                                >
-                                </textarea>
+                                />
+                                <ValidationError 
+                                    prefix="Message" 
+                                    field="client-message"
+                                    errors={state.errors}
+                                />
                             </section>
                         </div>
                 
                         <button
                         type="submit"
                         className='px-6 py-2 self-start rounded-lg bg-neutral-900 text-freedom-white hover:bg-neutral-600 transition-colors ease-linear'
+                        disabled={state.submitting}
                         >
                             Send Message
                         </button>

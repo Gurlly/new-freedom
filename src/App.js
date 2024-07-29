@@ -169,8 +169,8 @@ function App() {
 
         <section id="about" className='w-full min-h-max px-5 py-20 md:px-10 md:py-24 lg:py-36 lg:px-14 xl:py-40 xl:px-32'>
           <div>
-            <h1 className='font-extrabold tracking-widest text-[2.5rem] md:text-6xl mb-3 md:mb-7 lg:mb-10 xl:mb-14'>WHO WE ARE?</h1>
-            <p className='text-justify md:text-xl lg:text-2xl leading-7'>
+            <h1 className='font-extrabold tracking-widest text-[calc(2.5rem+2dvw)] mb-3 md:mb-7 lg:mb-10 xl:mb-14'>WHO WE ARE?</h1>
+            <p className='text-justify text-[calc(0.75rem+1dvw)]'>
               At Freedom Christian Fellowship, we are a vibrant community dedicated to living out the teachings of Jesus Christ. 
               Our goal is to create a welcoming environment where everyone can experience God's love and grace. 
               We believe in the power of faith, fellowship, and service to transform lives and make a positive impact in our community and beyond.
@@ -186,7 +186,7 @@ function App() {
         </section>
 
         <section id="event" className='w-full'>
-          <blockquote className='w-full px-5 md:px-7 lg:px-10 xl:px-20 py-14 lg:text-xl xl:text-2xl bg-freedom-yellow select-none'>
+          <blockquote className='w-full px-[calc(1rem+1dvw)] py-14 lg:text-xl xl:text-2xl bg-freedom-yellow select-none'>
             <p className="text-freedom-violet text-center">
               <em>
                 "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, 
@@ -198,16 +198,13 @@ function App() {
               <div className="text-base font-semibold text-gray-800">Matthew 28:19-20</div>
             </footer>
           </blockquote>
-          <div className='md:container md:mx-auto'>
-            <div className='py-20 md:py-24 lg:py-36 xl:py-40'>
+          <div className='w-full h-full py-32'>
               <AnnouncementCarousel/>
-            </div>
-            
           </div>
         </section>
 
         <section id="ministry" className='w-full bg-zinc-100'>
-          <blockquote className='w-full px-5 md:px-7 lg:px-10 xl:px-20 py-14 lg:text-xl xl:text-2xl bg-freedom-yellow select-none'>
+          <blockquote className='w-full px-[calc(1rem+1dvw)] py-14 lg:text-xl xl:text-2xl bg-freedom-yellow select-none'>
             <p className="text-freedom-violet text-center">
               <em>
                 "And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ."
@@ -221,7 +218,7 @@ function App() {
 
           <div className='md:container md:mx-auto px-5 py-20 md:py-24 lg:py-36 xl:py-40'>
             <div className='w-full flex items-center justify-center mb-8 md:mb-10 lg:mb-14 xl:mb-24'>
-              <h1 className='text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight'>Ministries</h1>
+              <h1 className='text-[calc(2rem+2dvw)] font-extrabold tracking-tight'>Ministries</h1>
             </div>
             <Ministry/>
           </div>
