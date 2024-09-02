@@ -1,11 +1,19 @@
 import React from "react";
 
+// Ministry Images
+import Worship from '../images/ministries/worship.jpg'
+import Communication from '../images/ministries/media.jpg'
+import Pastoral from '../images/ministries/pastoral.jpg'
+import Kid from '../images/ministries/kids.jpg'
+import Missionary from '../images/ministries/mission.jpg'
+import Youth from '../images/ministries/youth.jpg'
+
 const ministries = [
   {
     name: "Worship Team",
     description:
       "The Worship Ministry is dedicated to leading the congregation in worship through music and other forms of creative expression. This team works to create an atmosphere that invites people into a deeper connection with God during services and special events.",
-    src: "https://lh3.googleusercontent.com/drive-viewer/AKGpihbUUvn98zXbHd6mNClYj5BlKAj9sSy86l1nGyoMQYj5_bYAabgSpfVcfWDEOBMOy1h9UDHgNQlfeVYR2eZo-Hmorur-X_sorD8=s1600-rw-v1",
+    src: Worship,
     alt: "worship",
     form: "",
   },
@@ -13,7 +21,7 @@ const ministries = [
     name: "Communication Team",
     description:
       "The Communication (Media) Team manages the church’s media and communication channels, including social media, websites, newsletters, and multimedia production. Their goal is to effectively share the church's message and engage the community through various digital platforms.",
-    src: "https://lh3.googleusercontent.com/drive-viewer/AKGpihbzOpd2ielBmFjQCbhsyflIi38Co-ldtN2T1m3Ey64aaIBbm5OSunscxbmuTbMkudXeXQDaybUA8vf3wbBHLeMZy5W97pbsUg=s1600-rw-v1",
+    src: Communication,
     alt: "comm",
     form: "",
   },
@@ -21,7 +29,7 @@ const ministries = [
     name: "Pastoral Team",
     description:
       "The Pastoral Team provides spiritual guidance, support, and counseling to the congregation. They are responsible for preaching, teaching, and overseeing the spiritual well-being of the church members, ensuring that everyone is nurtured in their faith journey.",
-    src: "https://lh3.googleusercontent.com/drive-viewer/AKGpihYt7Ls7KixWDW2O6WYkOGvQmVkQX8MEsKPFvP_qnUfGdBZ40ThLzMQikeuJY0_LwhKBwkuMQGSBkJX-8zurRrvaBKBU25URJ6s=s1600-rw-v1",
+    src: Pastoral,
     alt: "pastoral",
     form: "",
   },
@@ -29,7 +37,7 @@ const ministries = [
     name: "Kid's Ministry",
     description:
       "The Kid's Ministry focuses on the spiritual development and growth of children. Through age-appropriate teaching, activities, and events, this ministry aims to introduce kids to the love of Jesus and help them build a strong foundation in their faith.",
-    src: "https://lh3.googleusercontent.com/drive-viewer/AKGpihYQM8ylFrO5ExX7KG0NL7viyfLM79Mc--kMHz7apCMJkYznbS-Z9UxJORAZ5e23et7eda4kEWLbiChgj7O6WBlEBpPHjC8hLCg=s1600-rw-v1",
+    src: Kid,
     alt: "kids",
     form: "",
   },
@@ -37,7 +45,7 @@ const ministries = [
     name: "Missionary",
     description:
       "The Missionary Ministry is dedicated to spreading the gospel and serving communities both locally and globally. This team organizes mission trips, supports missionaries, and engages in various outreach projects to make a positive impact in the world.",
-    src: "https://lh3.googleusercontent.com/drive-viewer/AKGpihbK4A0CtZsCLy8FxzDPSrOj7eWxODtrea51FOOs-RU9W9kvSdcSp0wvCzR78JQV2w_vMAewhOk_2SwsYpAKglDxZT-01eInHg=s1600-rw-v1",
+    src: Missionary,
     alt: "mission",
     form: "",
   },
@@ -45,7 +53,7 @@ const ministries = [
     name: "Youth Ministry",
     description:
       "The Youth Ministry caters to the spiritual and social needs of teenagers and young adults. Through Bible studies, group activities, and mentorship programs, this ministry helps young people grow in their faith, develop leadership skills, and form meaningful relationships.",
-    src: "https://lh3.googleusercontent.com/drive-viewer/AKGpihY25nREjTE0dwgP4U3bznYOhVG3lTCRNI2bKEkP5WDRCS1HN8wfagQyXOWoqAN5sZcK53uLWclPsvXem8oFBai_Y2B2cj9Di0g=s1600-rw-v1",
+    src: Youth,
     alt: "youth",
     form: "",
   },

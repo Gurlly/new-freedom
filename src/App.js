@@ -69,7 +69,7 @@ function App() {
         },
         {
           name: "Tithes",
-          link: "",
+          link: "https://forms.gle/5wR4ZdYkWpyT9YD7A",
         },
         {
           name: "Discipleship Information Form",
